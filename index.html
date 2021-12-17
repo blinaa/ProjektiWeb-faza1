@@ -19,14 +19,14 @@
           <li><a href="about.html">ABOUT US</a></li>
           <li class="dropdown"><button class="dropbtn">OUR SERVICES</button>
             <div class="dropdown-content">
-              <a href="#">Web Development</a>
-              <a href="#">Mobile Development</a>
-              <a href="#">App Development</a>
-              <a href="#">Graphic Design</a>
+              <a href="services/web.html">Web Development</a>
+              <a href="services/mob.html">Mobile Development</a>
+              <a href="services/app.html">App Development</a>
+              <a href="services/gd.html">Graphic Design</a>
             </div>
           </li>
-          <li><a href="">LOG IN</a></li>
-          <li><a href="">REGISTER</a></li>
+          <li><a href="login.html">LOG IN</a></li>
+          <li><a href="signup.html">SIGN UP</a></li>
         </ul>
       </nav>
     </div>
@@ -36,25 +36,21 @@
 
         <!-- Full-width images with number and caption text -->
         <div class="mySlides fade">
-          <div class="numbertext">1 / 4</div>
-          <img src="images/web.jpg" style="width:100%">
+          <a href="services/web.html"><img src="images/web.jpg" style="width:100%"></a>
           <div class="text">Web Developers</div>
         </div>
 
         <div class="mySlides fade">
-          <div class="numbertext">2 / 4</div>
-          <img src="images/mobile.jpeg" style="width:100%">
+          <a href="services/mob.html"><img src="images/mobile.jpeg" style="width:100%"></a>
           <div class="text">Mobile Developers</div>
         </div>
 
         <div class="mySlides fade">
-          <div class="numbertext">3 / 4</div>
-          <img src="images/appdev.jpg" style="width:100%">
+          <a href="services/app.html"><img src="images/appdev.jpg" style="width:100%"></a>
           <div class="text">Windows App Developers</div>
         </div>
         <div class="mySlides fade">
-          <div class="numbertext">4 / 4</div>
-          <img src="images/GD.jpg" style="width:100%">
+          <a href="services/gd.html"><img src="images/GD.jpg" style="width:100%"></a>
           <div class="text">Graphic Developer</div>
         </div>
 
@@ -72,6 +68,41 @@
         <span class="dot" onclick="currentSlide(4)"></span>
       </div>
     </div>
+    <div class="footer">
+    <div class="container">
+      <div class="row">
+        <div class="footer-col-1">
+          <h3>Download Our App</h3>
+          <p>Download our App for Android or IOS</p>
+          <div class="applogo">
+            <img src="/images/appstore.png" alt="">
+          </div>
+        </div>
+        <div class="footer-col-2">
+          <img src="https://www.f-cdn.com/assets/main/en/assets/freelancer-logo-open-graph.png" alt="">
+          <p>Everything simplified with our App</p>
+        </div>
+        <div class="footer-col-3">
+          <h3>Useful Links</h3>
+          <ul>
+            <li>Home Page</li>
+            <li>Sign Up</li>
+            <li>About Us</li>
+            <li>Contact Us</li>
+          </ul>
+        </div>
+        <div class="footer-col-4">
+          <h3>Follow Us</h3>
+          <ul>
+            <li>Facebook</li>
+            <li>Twitter</li>
+            <li>Instagram</li>
+            <li>Youtube</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
     <script>
       var slideIndex = 1;
       showSlides(slideIndex);
