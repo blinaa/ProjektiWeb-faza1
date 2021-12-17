@@ -1,0 +1,643 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather+Sans:wght@478&family=Open+Sans&family=Poppins&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+  font-weight: bold;
+  background-color: #ffffff;
+  box-sizing: border-box;
+}
+
+.container {
+  width: 100%;
+  height: 100vdh;
+  padding-left: 8%;
+  padding-right: 8%;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+.navbar {
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  width: 120px;
+  cursor: pointer;
+  margin: 40px 30px;
+}
+
+nav {
+  flex: 1;
+  text-align: right;
+}
+
+nav ul li {
+  list-style: none;
+  display: inline-block;
+  margin-right: 30px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #000;
+  font-size: 16px;
+  padding: 15px;
+}
+
+nav ul li a:hover {
+  color: darkblue;
+  background-color: rgb(233, 227, 227);
+  transition: 0.5s;
+  border-radius: 25px;
+}
+
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: black;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Caption text */
+.text {
+  color: black;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active,
+.dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {
+    opacity: .4
+  }
+
+  to {
+    opacity: 1
+  }
+}
+
+@keyframes fade {
+  from {
+    opacity: .4
+  }
+
+  to {
+    opacity: 1
+  }
+}
+
+.content {
+  position: relative;
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.content h1 {
+  color: grey;
+  padding-top: 50px;
+}
+
+.content p {
+  color: gray;
+  padding-top: 40px;
+}
+
+#fig1 {
+  margin-top: 40px;
+  display: flex;
+  justify-content: left;
+  text-align: left;
+}
+
+.Team figure li {
+  list-style-type: none;
+}
+
+#fig2 {
+  margin-top: 40px;
+  display: flex;
+  justify-content: right;
+  text-align: right;
+}
+
+.dropbtn {
+  color: black;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+
+.dropbtn:hover {
+  color: darkblue;
+  background-color: rgb(233, 227, 227);
+  transition: 0.5s;
+  border-radius: 25px;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {
+  background-color: #f1f1f1;
+
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+/*-------Boxes-HomePage-------------*/
+
+.wapper-box{
+  margin: 200px;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+}
+.bxs{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 150px;
+  margin: 150px;
+  position: static;
+  
+}
+.bx{
+  display: block;
+  width: 300px;
+  height: 400px;
+  align-items: center;
+  gap: 30px;
+  border: 2px solid black;
+  justify-content: center;
+}
+.bxs img{
+  width: 280px;
+  height: 300px;
+}
+
+
+/*Login form*/
+
+.wrapper {
+  display: flex;
+  position: relative;
+  max-width: 100%;
+  height: 700px;
+}
+
+.imgBx {
+  position: relative;
+  width: 50%;
+  height: 100%;
+
+}
+
+.imgBx img {
+  max-width: 700px;
+  max-height: 700px;
+  object-fit: cover;
+  position: absolute;
+  margin-right: 10px;
+}
+
+.contentBx {
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  margin-top: 30px;
+}
+
+.contentBx form {
+
+  width: 500px;
+  height: 300px;
+
+}
+
+.contentBx .inputBx {
+  margin-bottom: 20px;
+}
+
+.contentBx .inputBx span {
+  font-size: 16px;
+  margin-bottom: 5px;
+  display: inline-block;
+  font-weight: 600;
+  letter-spacing: 1px;
+
+}
+
+.contentBx input {
+  width: 100%;
+  padding: 10px 20px;
+  outline: none;
+  font-weight: 800;
+  border: 1px solid lightslategray;
+  border-radius: 20px;
+  font-size: 16;
+  background: transparent;
+}
+
+.contentBx h2 {
+  color: darkblue;
+  font-size: 30px;
+  margin-bottom: 20px;
+  border-bottom: 3px solid rgb(38, 0, 255);
+}
+
+.inputBx a {
+  text-decoration: none;
+  color: darkblue;
+}
+
+.inputBx a:hover {
+  color: rgb(28, 136, 131);
+}
+
+.contentBx .inputBx input[type="submit"] {
+  background-color: rgb(72, 111, 184);
+  color: white;
+  outline: none;
+  border: none;
+  font-weight: 800;
+  cursor: pointer;
+}
+
+.contentBx .inputBx input[type="submit"]:hover {
+  background-color: darkblue;
+}
+
+#forgot-label {
+  margin-bottom: 10px;
+  margin-top: 10px;
+
+}
+
+#confirm {
+  margin-bottom: 10px;
+}
+.wrapper-1{
+  margin-top: 50px;
+  margin-left: 50px;
+}
+
+/*Sign up Form*/
+#imgS {
+  max-height: 700px;
+  max-width: 700px;
+}
+.drejtimi{
+  width: 500px;
+  padding: 10px 20px;
+  outline: none;
+  font-weight: 800;
+  border: 1px solid lightslategray;
+  border-radius: 20px;
+  font-size: 16;
+  background: transparent;
+  font-family:"Poppins", sans-serif ;
+}
+
+@media (max-width: 768px) {
+  .navba{
+    display: flex;
+    justify-content: space-between;
+  }
+  .nav-bar-list {
+    display: none;
+  }
+  .imgBx img {
+    display: none;
+  }
+
+
+}
+.titles{
+  text-align: center;
+  font-family: 'Poppins',
+  sans-serif;
+}
+.team2 {
+  display: flex;
+  text-align: center;
+  padding-top: 50px;
+  justify-content: center;
+}
+
+.team2 h4 {
+  color: blue;
+  padding-bottom: 5px;
+}
+
+.team2 figure {
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+.team2 figure>img {
+  
+  border-radius: 20%;
+}
+
+.team2 figure>h3 {
+  padding: 10px;
+}
+.team2 figure{
+  margin: 10px;
+  padding: 10px;
+  background-color: rgba(0, 0, 0, 0.1);
+  border-radius: 5%;
+}
+.team2 figure > h3{
+  background-color: rgba(0, 0, 0, 0.2);
+  border-radius: 50%;
+  margin: 3px;
+  padding: 5px;
+}
+.team2 figure>h4 {
+  background-color: rgba(0, 0, 0, 0.2);
+  border-radius: 50%;
+  margin: 3px;
+  padding: 5px;
+}
+.team2 figure>p {
+  background-color: rgba(0, 0, 0, 0.2);
+  border-radius: 15%;
+  margin: 3px;
+  padding: 5px;
+}
+.team2 figure>a {
+  background-color: rgba(0, 0, 0, 0.2);
+  border-radius: 15%;
+  height: 40px;
+  width: 500px;
+  text-decoration: none;
+}
+.row{
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.col-2{
+  flex-basis: 50%;
+  min-width: 300px;
+}
+.col-2 img{
+  max-width: 100%;
+  padding: 50px 0;
+}
+.col-2 h1{
+  font-size: 50px;
+  line-height: 60px;
+  margin: 25px 0;
+}
+.small-container{
+  max-width: 1080px;
+  margin: auto;
+  padding-left: 25px;
+  padding-right: 25px;
+}
+.col-4{
+  flex-basis: 25%;
+  padding: 10px;
+  min-width: 200px;
+  margin-bottom: 50px;
+  transition: transform 0.5s;
+}
+.col-4 img{
+  width: 60%;
+}
+.title{
+  text-align: center;
+  margin: 0 auto 80px;
+  position: relative;
+  line-height: 60px;
+  color: #555;
+}
+.title:after{
+  content: '';
+  background: #ff523b;
+  width: 80px;
+  height: 5px;
+  border-radius: 5px;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.col-4 h4{
+  color: #555;
+  font-weight: normal;
+}
+.col-4 p {
+  font-size: 14px;
+
+}
+.col-4:hover{
+  transform: translateY(-5px);
+}
+
+/*---------Footer-------------*/
+
+.footer{
+  background-color: white;
+  color: #8a8a8a;
+  font-size: 15px;
+  padding: 20px;
+  justify-content: space-between;
+  padding-top: 150px;
+}
+.footer p{
+  color: #8a8a8a;
+}
+footer h3{
+  color: #fff;
+  margin-bottom: 20px;
+}
+.footer-col-1,
+.footer-col-2,
+.footer-col-3,
+.footer-col-4{
+  min-width: 250px;
+  margin-bottom: 20px;
+}
+.footer-col-1{
+  flex-basis: 30%;
+  margin-left: 40px;
+}
+.footer-col-2 {
+  flex:1;
+  text-align: center;
+}
+.footer-col-2 img{
+  width: 180px;
+  margin-bottom: 20px;
+}
+.footer-col-3,.footer-col-4{
+  flex-basis: 12%;
+  text-align: center;
+}
+ul{
+  list-style-type: none;
+}
+.applogo{
+  margin-top: 20px;
+}
+.applogo img{
+  width: 140px;
+}
+.footer a{
+  text-decoration: none;
+  color: #555;
+}
+.containerF{
+  margin-top: 40px;
+}
+.footer hr{
+  height: 3px;
+  background-color: rgb(126, 122, 122);
+  border-radius: 10%;
+}
+/*-------Join us---------*/
+.container-box{
+  display: flex;
+  width: 100%;
+  height: 100%;
+}
+.boxes{
+  margin: auto;
+  margin-top: 100px;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  gap: 80px
+}
+.boxes img{
+  width: 300px;
+  height: 310px;
+  object-fit: cover;
+  position: absolute;
+  padding-top: 10px;
+  object-position: center;
+  margin-right: 400px;
+}
+.box{
+  display: grid;
+  width: 400px;
+  height: 500px;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+  border: 2px solid lightgrey;
+  box-shadow: rgb(17, 19, 22);
+  grid-template-rows: auto;
+  gap: 10px;
+  
+}
+.box:hover{
+  border: 2px solid black;
+  box-shadow: lime;
+  
+}
+.boxes a{
+  text-decoration: none;
+  color: black;
+  font-size: 20px;
+  font-weight: 900;
+  font-family: 'Poppins', sans-serif;
+}
+.boxes a:hover{
+  color: darkblue;
+}
