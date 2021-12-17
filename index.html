@@ -14,7 +14,7 @@
     <div class="navbar">
       <img src="https://www.f-cdn.com/assets/main/en/assets/freelancer-logo-open-graph.png" alt="logo" class="logo">
       <nav>
-        <ul>
+        <ul class="nav-bar-list">
           <li><a href="index.html">HOME</a></li>
           <li><a href="about.html">ABOUT US</a></li>
           <li class="dropdown"><button class="dropbtn">OUR SERVICES</button>
@@ -26,11 +26,9 @@
             </div>
           </li>
           <li><a href="login.html">LOG IN</a></li>
-          <li><a href="signup.html">SIGN UP</a></li>
+          <li><a href="mainsignup.html">Join US</a></li>
         </ul>
-      </nav>
-    </div>
-    <div class="employees">
+      </div>
 
       <div class="slideshow-container">
 
@@ -68,41 +66,65 @@
         <span class="dot" onclick="currentSlide(4)"></span>
       </div>
     </div>
+  </div>
+  <div class="wrapper-box">
+    <div class="bxs">
+      <a href=""><div class="bx">
+        <img src="images/companies.png" alt="">
+        <h4>We are hiring!</h4>
+        <p>Check out the newest job positions</p>
+      </div></a>
+      <a href=""><div class="bx">
+        <img src="images/employees.png" alt="">
+        <h4>I am interested!</h4>
+        <p>Find your newest employees</p>
+      </div></a>
+      <div class="bx">
+        <a href=""><img src="images/employees.png" alt="">
+        <h4>I am interested!</h4>
+        <p>Find your newest employees</p>
+      </div></a>
+    </div>
+  </div>
+ 
+  <
     <div class="footer">
-    <div class="container">
+      <hr>
+    <div class="containerF">
       <div class="row">
         <div class="footer-col-1">
           <h3>Download Our App</h3>
           <p>Download our App for Android or IOS</p>
           <div class="applogo">
-            <img src="/images/appstore.png" alt="">
+            <img src="images/appstore.png" alt="">
           </div>
         </div>
         <div class="footer-col-2">
-          <img src="https://www.f-cdn.com/assets/main/en/assets/freelancer-logo-open-graph.png" alt="">
+          <a href="index.html"><img src="https://www.f-cdn.com/assets/main/en/assets/freelancer-logo-open-graph.png" alt=""></a>
           <p>Everything simplified with our App</p>
         </div>
         <div class="footer-col-3">
           <h3>Useful Links</h3>
           <ul>
-            <li>Home Page</li>
-            <li>Sign Up</li>
-            <li>About Us</li>
-            <li>Contact Us</li>
+            <a href="index.html"><li>Home Page</li></a>
+            <a href="mainsignup.html"><li>Sign Up</li></a>
+            <a href="about.html"><li>About Us</li></a>
+            <a href=""><li>Contact Us</li></a>
           </ul>
         </div>
         <div class="footer-col-4">
           <h3>Follow Us</h3>
           <ul>
-            <li>Facebook</li>
-            <li>Twitter</li>
-            <li>Instagram</li>
-            <li>Youtube</li>
+            <a href="https://www.facebook.com/"><li>Facebook</li></a>
+            <a href="https://www.Twitter.com/"><li>Twitter</li></a>
+            <a href="https://www.Instagram.com/"><li>Instagram</li></a>
+            <a href="https://www.Snapchat.com/"><li>Snapchat</li></a>
           </ul>
         </div>
       </div>
     </div>
   </div>
+
     <script>
       var slideIndex = 1;
       showSlides(slideIndex);
@@ -150,6 +172,17 @@
       //   slides[slideIndex-1].style.display = "block";
       //   setTimeout(showSlides, 2000); // Change image every 2 seconds
       // }
+      const btn = document.getElementById('menu-btn')
+      const nav = document.getElementById('menu')
+
+      function navToggle() {
+      btn.classList.toggle('open')
+      nav.classList.toggle('hidden')
+    document.body.classList.toggle('no-scroll')
+      }
+
+    btn.addEventListener('click', navToggle)
+
     </script>
 </body>
 
